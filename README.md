@@ -49,3 +49,9 @@ export const resolvers: Resolvers = {
   },
 };
 ```
+
+## step4 try playground
+```
+$ yarn dev
+```
+![playground](https://i.gyazo.com/60bf027d64e96bbb6774f00c92e244db.gif)
