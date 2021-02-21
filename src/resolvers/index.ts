@@ -1,7 +1,7 @@
-import { books } from "./book";
+import mockData from "../mocks/book.json";
 
 export const resolvers = {
   Query: {
-    books,
+    books: () => mockData,
   },
 };
