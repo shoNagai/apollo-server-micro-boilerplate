@@ -1,8 +1,8 @@
 {
-  "name": "apollo-server-with-firestore",
+  "name": "apollo-server-micro-boilerplate",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "shoNagai",
+  "author": "strawberry4062@gmail.com",
   "license": "MIT",
   "private": false,
   "scripts": {
