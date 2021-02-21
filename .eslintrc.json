@@ -4,7 +4,20 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier",
+    "plugin:prettier/recommended",
     "prettier/@typescript-eslint"
-  ]
+  ],
+  "rules": {
+    "no-console": "off",
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "types": {
+          // for graphql codegen
+          "{}": false
+        },
+        "extendDefaults": false
+      }
+    ]
+  }
 }

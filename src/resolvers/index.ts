@@ -1,6 +1,7 @@
-import mockData from "../mocks/book.json";
+import mockData from '../mocks/book.json';
+import { Resolvers } from '../types/graphql';
 
-export const resolvers = {
+export const resolvers: Resolvers = {
   Query: {
     books: () => mockData,
   },
