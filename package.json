@@ -1,0 +1,29 @@
+{
+  "name": "apollo-server-with-firestore",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "shoNagai",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "micro ./build/index.js",
+    "dev": "node -r ts-node/register node_modules/.bin/micro-dev ./src/index.ts",
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "apollo-server-micro": "^2.21.0",
+    "graphql": "^15.5.0",
+    "graphql-import": "^1.0.2",
+    "graphql-tools": "^7.0.4",
+    "micro": "^9.3.4",
+    "microrouter": "^3.1.3"
+  },
+  "devDependencies": {
+    "@types/graphql": "^14.5.0",
+    "@types/micro": "^7.3.3",
+    "@types/microrouter": "^3.1.1",
+    "micro-dev": "^3.0.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.5"
+  }
+}
