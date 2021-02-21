@@ -7,8 +7,8 @@ Getting started with GraphQL on apollo-server-micro 🚀
 ```
 $ git clone https://github.com/shoNagai/apollo-server-micro-boilerplate.git
 $ cd apollo-server-micro-boilerplate
-$ npm install
-$ npm run dev
+$ yarn install
+$ yarn dev
 ```
 
 ## step1 schema design
@@ -27,12 +27,23 @@ type Query {
 }
 ```
 
-## step2 create a resolver
+## step2 generate types
+
+```
+$ yarn generate
+```
+
+```
+src/types/graphql.ts
+```
+
+## step3 create a resolver
 
 ```TypeScript
-import mockData from "../mocks/book.json";
+import mockData from '../mocks/book.json';
+import { Resolvers } from '../types/graphql';
 
-export const resolvers = {
+export const resolvers: Resolvers = {
   Query: {
     books: () => mockData,
   },
